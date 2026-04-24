@@ -25,7 +25,7 @@ During testing, the circuit successfully fired all three solenoids simultaneousl
 
 Instead of over-engineering a heavier, tethered power delivery system, the active control loop was scrapped. The project was finalized as an open-source mechanical release. The engineered frame STLs and complete Bill of Materials (BOM) were published for the community to utilize in their own robotics or haptic builds.
 
-# Hardware Release: Core Bill of Materials
+### Hardware Release: Core Bill of Materials
 assembly: "Hand_Cannon_Chassis_v1"
 primary_components:
   - part: "Frame Housing"
