@@ -1,7 +1,11 @@
-- name: Adobe Photoshop
-  percentage: 95
-  color: info
-
-- name: Adobe Illustrator
+- name: 3D Mechanical Drafting/Rapid Prototyping (Microsoft 3D Builder/Blender)
   percentage: 90
+  color: warning
+
+- name: System Architecture & Hardware Integration
+  percentage: 85
   color: success
+
+- name: Full-Lifecycle Software Development
+  percentage: 75
+  color: 
