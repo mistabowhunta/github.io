@@ -4,7 +4,17 @@ tools: [Python, YOLOv8, Computer Vision, Hardware, 3D Printing]
 image: /assets/images/1759271604070.jpg # Replace with actual photo
 description: AI-powered mechatronic sentry turret and drone system featuring YOLOv8 object detection, multi-threaded Python tracking, and a custom PLA chassis.
 ---
-
+<style>
+.highlight { background: #1e1e1e !important; color: #d4d4d4 !important; padding: 15px; border-radius: 8px; overflow-x: auto; }
+.highlight .c { color: #6a9955 !important; font-style: italic; } 
+.highlight .k { color: #569cd6 !important; font-weight: bold; } 
+.highlight .s { color: #ce9178 !important; } 
+.highlight .nf { color: #dcdcaa !important; } 
+.highlight .nc { color: #4ec9b0 !important; } 
+.highlight .o { color: #d4d4d4 !important; } 
+.highlight .nb { color: #4ec9b0 !important; } 
+.highlight .mi { color: #b5cea8 !important; } 
+</style>
 ### **Executive Summary**
 The Aegis Control system is a fully autonomous, AI-driven sentry turret with drone integration. Designed and prototyped from scratch, the system integrates a custom 3D-printed chassis with real-time target tracking utilizing computer vision.
 
@@ -42,21 +52,3 @@ def motion_control_loop():
     while True:
         with motion_thread_lock:
 '''
-
-
-
-<style>
-.highlight { background: #1e1e1e !important; color: #d4d4d4 !important; padding: 15px; border-radius: 8px; overflow-x: auto; }
-.highlight .c { color: #6a9955 !important; font-style: italic; } 
-.highlight .k { color: #569cd6 !important; font-weight: bold; } 
-.highlight .s { color: #ce9178 !important; } 
-.highlight .nf { color: #dcdcaa !important; } 
-.highlight .nc { color: #4ec9b0 !important; } 
-.highlight .o { color: #d4d4d4 !important; } 
-.highlight .nb { color: #4ec9b0 !important; } 
-.highlight .mi { color: #b5cea8 !important; } 
-</style>
-            # Calculate positional error and apply tracking gain
-            pan_error = target_pan_pulse - current_pan_pulse
-            pan_distance = abs(pan_error)
-            # Apply movement logic to PCA9685 via I2C...
