@@ -18,9 +18,9 @@ nav_exclude:
   - pages/tags.html
   - pages/404.html
   - pages/index.md
-  - name: 博客
-    link: /blog/
-  - name: 关于
+#  - name: 博客
+#    link: /blog/
+#  - name: 关于
 
 
 ### Author Info ###
@@ -48,7 +48,7 @@ author:
 
 
 ### Posts ###
-permalink: /blog/:title
+#permalink: /blog/:title
 
 
 ### Collections ###
