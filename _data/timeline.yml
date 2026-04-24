@@ -1,17 +1,37 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Business Analyst Programmer, City of Beaverton
+  from: May 2021
+  to: Feb 2026
+  description: 
+              ● Developed and optimized customized internal and external business applications,
+                specializing in complex SSRS Report Builder integrations. Deliberately engineered
+                custom UI bypasses for manual entry limitations to streamline municipal data pipelines.
+              ● Analyzed and implemented strategic information plans, utilizing C# and SQL server
+                (SSMS) to improve operational flow and data visualization via Power BI.
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Lead Engineer & Owner, NasonNation Robotics (Formerly operated as MyAppMobile, LLC & Independent Freelance)
+  from: Feb 2015
+  to: Present
+  description: 
+              ● Hardware/Software Integration: Architected and deployed an AI-Integrated Optical
+                Tracking System utilizing Python and machine learning for real-time computer vision and
+                automated target tracking.
+              ● VR/Haptic Prototyping: Engineered "The Sentient Sidearm," a context-aware VR pistol
+                attachment, designing the iterative hardware utilizing solenoids, Python logic, and
+                advanced 3D printing (Bambu Lab X1-Carbon / PETG-CF) for precision recoil simulation.
+              ● Telemetry & Embedded Systems: Engineered low-latency wireless control loops
+                utilizing MQTT protocols to remotely actuate dual-servo mechanisms for advanced
+                hardware prototyping.
+              ● Mobile Architecture: Designed, tested, and maintained customized mobile software
+                solutions for Pacific Northwest businesses, functioning as lead developer across Android
+                and iOS platforms.
+              ● Team Leadership: Mentored junior developers and managed the end-to-end SDLC for
+                cross-platform applications using .NET, Xamarin, and Google Firebase.
+
+- title: Service Program Analyst & Software Developer, Tektronix
+  from: Jan 2011
+  to: May 2021
+  description: 
+            ● Engineered numerous internal tools using the Microsoft Power Platform, SSMS, and
+              machine learning vision models to automate worldwide customer support operations.
+            ● Led special projects resulting in documented process improvements and cost reductions,
+              driving complex data analysis for global support decisions.
