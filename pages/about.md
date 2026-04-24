@@ -7,8 +7,8 @@ weight: 3
 
 # **About Me**
 
-Hi I am **{{ site.author.name }}** :wave:,<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Hi I am **{{ site.author.name }}**,<br>
+Architect and Lead Engineer with 15 years of experience designing and deploying end-to-end software and mechanical systems. Proven expertise in bridging the gap between high-level application architecture (.NET/C#, Python) and physical hardware integration (robotics, multi-material 3D fabrication, haptic telemetry). Thrives in autonomous, high-stakes environments, consistently engineering custom solutions to bypass hardware and software limitations.
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
