@@ -1,6 +1,6 @@
 ---
 name: Hand Cannon - Heavyweight Haptics
-tools: [Hardware Architecture, CAD, 3D Printing, Prototyping]
+tools: [Hardware Architecture, Microsoft 3D Builder, Blender, 3D Printing, Prototyping]
 image: /assets/images/PolishedDisplay.png
 description: An exploratory mechatronic build testing high-force linear actuators for VR recoil, resulting in an open-source hardware chassis release.
 ---
