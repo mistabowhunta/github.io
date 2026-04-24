@@ -41,6 +41,21 @@ def motion_control_loop():
     global current_pan_pulse, current_tilt_pulse
     while True:
         with motion_thread_lock:
+'''
+
+
+
+<style>
+.highlight { background: #1e1e1e !important; color: #d4d4d4 !important; padding: 15px; border-radius: 8px; overflow-x: auto; }
+.highlight .c { color: #6a9955 !important; font-style: italic; } 
+.highlight .k { color: #569cd6 !important; font-weight: bold; } 
+.highlight .s { color: #ce9178 !important; } 
+.highlight .nf { color: #dcdcaa !important; } 
+.highlight .nc { color: #4ec9b0 !important; } 
+.highlight .o { color: #d4d4d4 !important; } 
+.highlight .nb { color: #4ec9b0 !important; } 
+.highlight .mi { color: #b5cea8 !important; } 
+</style>
             # Calculate positional error and apply tracking gain
             pan_error = target_pan_pulse - current_pan_pulse
             pan_distance = abs(pan_error)
