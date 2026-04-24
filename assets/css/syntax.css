@@ -1,0 +1,9 @@
+.highlight { background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 8px; overflow-x: auto; }
+.highlight .c { color: #6a9955; font-style: italic; } /* Comments */
+.highlight .k { color: #569cd6; font-weight: bold; } /* Keywords */
+.highlight .s { color: #ce9178; } /* Strings */
+.highlight .nf { color: #dcdcaa; } /* Functions */
+.highlight .nc { color: #4ec9b0; } /* Classes */
+.highlight .o { color: #d4d4d4; } /* Operators */
+.highlight .nb { color: #4ec9b0; } /* Built-ins */
+.highlight .mi { color: #b5cea8; } /* Numbers */
