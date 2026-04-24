@@ -1,9 +1,7 @@
 main:
-  - title: 首页
+  - title: Isaac Nason | Mechatronics Engineer
     url: /
-  - title: 博客
-    url: /blog/
-  - title: 项目
-    url: /projects/
-  - title: 关于
-    url: /about/
+  - title: Projects
+    url: projects/
+  - title: About
+    url: about/
