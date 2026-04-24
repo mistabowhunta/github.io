@@ -5,7 +5,7 @@
               Developed and optimized customized internal and external business applications,
               specializing in complex SSRS Report Builder integrations. Deliberately engineered
               custom UI bypasses for manual entry limitations to streamline municipal data pipelines.
-  description:            
+              
               Analyzed and implemented strategic information plans, utilizing C# and SQL server
               (SSMS) to improve operational flow and data visualization via Power BI.
 
@@ -16,19 +16,19 @@
               Hardware/Software Integration - Architected and deployed an AI-Integrated Optical
               Tracking System utilizing Python and machine learning for real-time computer vision and
               automated target tracking.
-  description:            
+              
               VR/Haptic Prototyping - Engineered The Sentient Sidearm, a context-aware VR pistol
               attachment, designing the iterative hardware utilizing solenoids, Python logic, and
               advanced 3D printing (Bambu Lab X1-Carbon / PETG-CF) for precision recoil simulation.
-  description:            
+             
               Telemetry & Embedded Systems - Engineered low-latency wireless control loops
               utilizing MQTT protocols to remotely actuate dual-servo mechanisms for advanced
               hardware prototyping.
-  description:            
+             
               Mobile Architecture - Designed, tested, and maintained customized mobile software
               solutions for Pacific Northwest businesses, functioning as lead developer across Android
               and iOS platforms.
-  description:            
+              
               Team Leadership - Mentored junior developers and managed the end-to-end SDLC for
               cross-platform applications using .NET, Xamarin, and Google Firebase.
 
@@ -38,6 +38,6 @@
   description: 
             Engineered numerous internal tools using the Microsoft Power Platform, SSMS, and
             machine learning vision models to automate worldwide customer support operations.
-  description:          
+            
             Led special projects resulting in documented process improvements and cost reductions,
             driving complex data analysis for global support decisions.
