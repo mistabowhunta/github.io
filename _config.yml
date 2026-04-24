@@ -101,6 +101,6 @@ exclude:
   - LICENSE
   - "*.log"
 
-'''python
+```yaml
 markdown: kramdown
 highlighter: rouge
