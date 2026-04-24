@@ -100,7 +100,3 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
-  
-```yaml
-markdown: kramdown
-highlighter: rouge
