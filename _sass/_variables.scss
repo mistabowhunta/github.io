@@ -11,3 +11,14 @@ $text-black: #343a40;
 $text-white: rgba(white, .9);
 
 $rounded-borders: 15px;
+
+/* Syntax Highlighting Override */
+.highlight { background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 8px; overflow-x: auto; margin-bottom: 20px; }
+.highlight .c, .highlight .c1 { color: #6a9955; font-style: italic; } /* Comments */
+.highlight .k, .highlight .kd, .highlight .kn { color: #569cd6; font-weight: bold; } /* Keywords */
+.highlight .s, .highlight .s1, .highlight .s2 { color: #ce9178; } /* Strings */
+.highlight .nf, .highlight .nx { color: #dcdcaa; } /* Functions / Variables */
+.highlight .nc { color: #4ec9b0; } /* Classes */
+.highlight .o, .highlight .p { color: #d4d4d4; } /* Operators / Punctuation */
+.highlight .nb, .highlight .bp { color: #4ec9b0; } /* Built-ins */
+.highlight .mi, .highlight .mf { color: #b5cea8; } /* Numbers */
