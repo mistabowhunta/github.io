@@ -1,7 +1,7 @@
 ---
 name: Aegis Control Sentry Turret
 tools: [Python, MQTT, Hardware, 3D Printing]
-image: 1759271604070.jpg # Replace with actual photo
+image: assets/images/1759271604070.jpg # Replace with actual photo
 description: AI-powered mechatronic sentry turret featuring closed-loop MQTT telemetry and a custom PETG-CF chassis.
 ---
 
