@@ -1,11 +1,9 @@
 ### Site Settings ###
-title               : portfolYOU
+title               : Isaac Nason | Mechatronics Engineer
 description         : >-
-                      I turn coffee :coffee: into code,
-                      use tabs over spaces
-                      and never broke production.
-baseurl             : "/portfolYOU"            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : yousinix/portfolYOU      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+                      Hardware and software engineer with 15 years of experience bridging the gap between physical mechanics and digital control systems. Specializing in Python, C#, and mechatronic prototyping.
+baseurl             : ""            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : mistabowhunta.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : yousinix/portfolYOU
 open_new_tab        : false                    # Opens external URLs in new tab (works for posts, projects and navbar only)
 
@@ -25,31 +23,31 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : John Doe
-  image             : https://i.imgur.com/uyDNQnn.jpg
-  behance           : your_username
+  name              : Isaac Nason
+  image             : assets/images/WIN_20260422_14_53_39_Pro.jpg
+# behance           : your_username
 # dribbble          : your_username
-  email             : username@domain.com
-  facebook          : your_username
-  github            : your_username
+  email             : isaacnason1@gmail.com
+#  facebook          : your_username
+  github            : mistabowhunta
 # gitlab            : your_username
 # instagram         : your_username
 # kaggle            : your_username
-  linkedin          : your_username
-  medium            : your_username
+  linkedin          : https://www.linkedin.com/in/isaac-nason-75990214/
+#  medium            : your_username
 # soundcloud        : your_username
 # spotify           : your_username
 # stackoverflow     : your_user_id
 # tumblr            : your_username.tumblr.com
 # twitch            : your_username
-  twitter           : your_username
+# twitter           : your_username
 # vimeo             : your_username
 # youtube           : your_channel_name
 # keybase           : your_username
 
 
 ### Posts ###
-permalink: /blog/:title
+#permalink: /blog/:title
 
 
 ### Collections ###
@@ -62,8 +60,8 @@ collections:
 
 
 ### Disqus ###
-disqus:
-  shortname: your-short-name-disqus                     # Your website Shortname on disqus
+#disqus:
+#  shortname: your-short-name-disqus                     # Your website Shortname on disqus
 
 
 ### Analytics ###
@@ -95,12 +93,6 @@ defaults:
       type: "elements"                                  # For Documentation Only
     values:                                             # For Documentation Only
       layout: "element"                                 # For Documentation Only
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: false                                   # Set to true to enable disqus comments
-
 
 ### Exclude from processing ###
 exclude:
