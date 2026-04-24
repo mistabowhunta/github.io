@@ -1,38 +1,47 @@
 ---
 name: Aegis Control Sentry Turret
-tools: [Python, MQTT, Hardware, 3D Printing]
+tools: [Python, YOLOv8, Computer Vision, Hardware, 3D Printing]
 image: assets/images/1759271604070.jpg # Replace with actual photo
-description: AI-powered mechatronic sentry turret featuring closed-loop MQTT telemetry and a custom PETG-CF chassis.
+description: AI-powered mechatronic sentry turret and drone system featuring YOLOv8 object detection, multi-threaded Python tracking, and a custom PLA chassis.
 ---
 
 ### **Executive Summary**
-The Aegis Control system is a fully autonomous, AI-driven sentry turret. Designed and rapidly prototyped from scratch, the system integrates a custom 3D-printed chassis with real-time target tracking and closed-loop MQTT telemetry for remote monitoring.
+The Aegis Control system is a fully autonomous, AI-driven sentry turret with drone integration. Designed and prototyped from scratch, the system integrates a custom 3D-printed chassis with real-time target tracking utilizing computer vision.
 
-**Tech Stack:** Python, C#, MQTT, Bambu Studio, PETG-CF.  
-**Source Code:** [View the full repository on GitHub](#) ---
+**Tech Stack:** Python, OpenCV, YOLOv8 (TFLite), Flask, Raspberry Pi 4, ESP32.  
+**Documentation:** [View the official publication on Hackster.io](https://www.hackster.io/NasonNation_Robotics/aegis-control-ai-powered-sentry-turret-drone-system-a2892e)
+
+---
 
 ### **System Architecture**
-To maintain high-speed target acquisition while managing sensor data, the architecture was split between physical actuation and external telemetry processing. 
+To maintain high-speed target acquisition while keeping manual controls responsive, the system utilizes a multi-threaded software architecture and an isolated, custom power distribution network.
 
 #### **1. Hardware & Fabrication**
-The physical chassis was engineered for high rigidity to handle rapid servo movements without structural flex. 
-* **Materials:** Structural components printed in PETG-CF (Carbon Fiber) using a Bambu Lab X1-Carbon.
-* **Actuation:** Dual-axis servo control for continuous pan and tilt tracking.
+The physical chassis was engineered for high rigidity to handle rapid 35KG servo movements without structural flex or binding. 
+* **Materials:** Structural components printed in PLA utilizing a Bambu Lab X1-Carbon.
+* **Power Isolation:** A custom multi-voltage system utilizing dedicated buck converters and MOSFET controls. This ensures the power-hungry servos do not cause voltage drops or interfere with the sensitive logic processing of the Raspberry Pi.
 
-#### **2. Telemetry & Control Logic (Python/MQTT)**
-Instead of relying on standard serial print debugging, the system utilizes an MQTT broker to broadcast telemetry data (servo positioning, target lock status, latency) in real time. 
+#### **2. Software Logic & AI (Python)**
+The core brain operates on a Raspberry Pi 4, utilizing a custom-trained YOLOv8 TFLite model to detect and track specific aerial targets. The Python backend is heavily multi-threaded to decouple video streaming, AI processing, and real-time motion control (via I2C to a PCA9685 driver). A Flask web server serves as the UI for manual override.
 
 ```python
-# Example: MQTT Telemetry Publishing Loop
-import paho.mqtt.client as mqtt
-import json
-import time
+# Core logic snippet: Multi-threaded Architecture for Non-Blocking Operations
+import threading
 
-def publish_telemetry(client, pan_angle, tilt_angle, target_locked):
-    payload = {
-        "device_id": "aegis_unit_01",
-        "status": "ENGAGED" if target_locked else "SCANNING",
-        "coordinates": {"pan": pan_angle, "tilt": tilt_angle},
-        "timestamp": time.time()
-    }
-    client.publish("nasonnation/aegis/telemetry", json.dumps(payload))
+# Dedicated thread for continuous video capture
+def camera_capture_thread():
+    global shared_frame
+    while True:
+        frame = picam2.capture_array()
+        with frame_lock:
+            shared_frame = frame
+
+# Dedicated thread for calculating smooth, non-blocking servo tracking
+def motion_control_loop():
+    global current_pan_pulse, current_tilt_pulse
+    while True:
+        with motion_thread_lock:
+            # Calculate positional error and apply tracking gain
+            pan_error = target_pan_pulse - current_pan_pulse
+            pan_distance = abs(pan_error)
+            # Apply movement logic to PCA9685 via I2C...
