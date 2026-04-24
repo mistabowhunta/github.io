@@ -1,7 +1,7 @@
 ---
 name: Aegis Control Sentry Turret
 tools: [Python, YOLOv8, Computer Vision, Hardware, 3D Printing]
-image: assets/images/1759271604070.jpg # Replace with actual photo
+image: /assets/images/1759271604070.jpg # Replace with actual photo
 description: AI-powered mechatronic sentry turret and drone system featuring YOLOv8 object detection, multi-threaded Python tracking, and a custom PLA chassis.
 ---
 
