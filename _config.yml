@@ -111,3 +111,7 @@ exclude:
   - pages/documentation.md
   - documentation/partials/**
   - "*.log"
+
+```yaml
+markdown: kramdown
+highlighter: rouge
