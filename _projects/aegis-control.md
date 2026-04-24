@@ -42,5 +42,4 @@ def motion_control_loop():
             # Calculate positional error and apply tracking gain
             pan_error = target_pan_pulse - current_pan_pulse
             pan_distance = abs(pan_error)
-            # Apply movement logic to PCA9685 via I2C...
-'''
+            # Apply movement logic to PCA9685 via I2C
