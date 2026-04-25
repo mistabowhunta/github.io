@@ -23,6 +23,8 @@ The initial design goal was to achieve "heavyweight" kinetic feedback by synchro
 #### **2. The Pivot to Open Source**
 During testing, the circuit successfully fired all three solenoids simultaneously. However, the combined 75N of kinetic force did not meet the desired threshold for realistic "heavyweight" recoil when scaled against the physical weight of the hardware. 
 
+Engineered the electrical integration for the high-draw solenoids, utilizing MOSFETs and flyback diodes to isolate inductive voltage spikes and protect the core logic board during simultaneous firing.
+
 Instead of over-engineering a heavier, tethered power delivery system, the active control loop was scrapped. The project was finalized as an open-source mechanical release. The engineered frame STLs and complete Bill of Materials (BOM) were published for the community to utilize in their own robotics or haptic builds.
 
 ### Hardware Release: Core Bill of Materials
