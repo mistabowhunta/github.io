@@ -21,8 +21,8 @@ The physical chassis was engineered for high rigidity to handle rapid 35KG servo
 * **Materials:** Structural components printed in PLA utilizing a Bambu Lab X1-Carbon.
 * **Power Isolation:** A custom multi-voltage system utilizing dedicated buck converters and MOSFET controls. This ensures the power-hungry servos do not cause voltage drops or interfere with the sensitive logic processing of the Raspberry Pi.
 
-#### **2. Software Logic & AI (Python)**
-The core brain operates on a Raspberry Pi 4, utilizing a custom-trained YOLOv8 TFLite model to detect and track specific aerial targets. The Python backend is heavily multi-threaded to decouple video streaming, AI processing, and real-time motion control (via I2C to a PCA9685 driver). A Flask web server serves as the UI for manual override.
+#### **2. Perception-to-Action Pipeline (Python)**
+The core brain operates on a Raspberry Pi 4, utilizing a custom-trained YOLOv8 TFLite model to detect and track specific aerial targets. The Python backend is heavily multi-threaded to decouple video streaming, AI processing, and real-time motion control (via I2C to a PCA9685 driver). A Flask web server serves as the UI for manual override. Utilized proportional feedback control to smooth the 35KG servo actuation, translating dynamic YOLOv8 bounding boxes into precise kinematic movements.
 
 ```python
 # Core logic snippet: Multi-threaded Architecture for Non-Blocking Operations
