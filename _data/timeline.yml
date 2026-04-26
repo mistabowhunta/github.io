@@ -1,43 +1,19 @@
-- title: Business Analyst Programmer, City of Beaverton
-  from: May 2021
-  to: Feb 2026
-  description: 
-              Developed and optimized customized internal and external business applications,
-              specializing in complex SSRS Report Builder integrations. Deliberately engineered
-              custom UI bypasses for manual entry limitations to streamline municipal data pipelines.
-              
-              Analyzed and implemented strategic information plans, utilizing C# and SQL server
-              (SSMS) to improve operational flow and data visualization via Power BI.
+experience:
+  - company: "NasonNation Robotics"
+    title: "Lead Engineer & Owner"
+    startDate: "2015" # Insert start date
+    endDate: "Present"
+    note: "(Formerly operated as MyAppMobile, LLC & Independent Freelance)"
+    highlights:
+      - "Hardware/Software Integration: Architected and deployed an AI-Integrated Optical Tracking System utilizing Python and machine learning for real-time computer vision and automated target tracking."
+      - "VR/Haptic Prototyping: Engineered The Sentient Sidearm, a context-aware VR pistol attachment. Designed the iterative hardware utilizing solenoids, Python logic, and advanced 3D printing (Bambu Lab X1-Carbon / PETG-CF) for precision recoil simulation."
+      - "Telemetry & Embedded Systems: Engineered low-latency wireless control loops utilizing raw WiFi sockets and Python telemetry to remotely actuate multi-servo mechatronic mechanisms for advanced hardware prototyping."
+      - "Large-Scale Kinematics: Integrated MQTT protocols for wireless, long-range actuation of heavy-duty 2020 aluminum extrusion mechanical systems, controlled by 550KG servo motors."
+      - "Mobile Architecture: Designed, tested, and maintained customized mobile software solutions for Pacific Northwest businesses, functioning as lead developer across Android and iOS platforms."
+      - "Team Leadership: Mentored junior developers and managed the end-to-end SDLC for cross-platform applications using .NET, Xamarin, and Google Firebase."
 
-- title: Lead Engineer & Owner, NasonNation Robotics (Formerly operated as MyAppMobile, LLC & Independent Freelance)
-  from: Feb 2015
-  to: Present
-  description: 
-              Hardware/Software Integration - Architected and deployed an AI-Integrated Optical
-              Tracking System utilizing Python and machine learning for real-time computer vision and
-              automated target tracking.
-              
-              VR/Haptic Prototyping - Engineered The Sentient Sidearm, a context-aware VR pistol
-              attachment, designing the iterative hardware utilizing solenoids, Python logic, and
-              advanced 3D printing (Bambu Lab X1-Carbon / PETG-CF) for precision recoil simulation.
-             
-              Telemetry & Embedded Systems - Engineered low-latency wireless control loops
-              utilizing MQTT protocols to remotely actuate dual-servo mechanisms for advanced
-              hardware prototyping.
-             
-              Mobile Architecture - Designed, tested, and maintained customized mobile software
-              solutions for Pacific Northwest businesses, functioning as lead developer across Android
-              and iOS platforms.
-              
-              Team Leadership - Mentored junior developers and managed the end-to-end SDLC for
-              cross-platform applications using .NET, Xamarin, and Google Firebase.
-
-- title: Service Program Analyst & Software Developer, Tektronix
-  from: Jan 2011
-  to: May 2021
-  description: 
-            Engineered numerous internal tools using the Microsoft Power Platform, SSMS, and
-            machine learning vision models to automate worldwide customer support operations.
-            
-            Led special projects resulting in documented process improvements and cost reductions,
-            driving complex data analysis for global support decisions.
+  - company: "City of Beaverton"
+    title: "Business Analyst Programmer"
+    startDate: "2021" # Insert start date
+    endDate: "February 2026"
+    description: "Developed and optimized customized internal and external business applications, specializing in complex SSRS Report Builder integrations. Engineered automated data pipelines to bypass manual UI entry limitations, significantly streamlining municipal workflows. Analyzed and implemented strategic information plans, utilizing C# and SQL Server (SSMS) to improve operational flow and data visualization."
