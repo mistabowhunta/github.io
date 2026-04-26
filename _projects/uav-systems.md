@@ -11,7 +11,7 @@ Tech Stack: Python, ArduPilot, MAVLink Protocol, Pixhawk 6C, BNO085 IMUs, SITL.
 Documentation: View the MAVLink control scripts on GitHub (Note: link this to your repo if you have one)
 
 **Tech Stack:** Python, ArduPilot, MAVLink Protocol, Pixhawk 6C, BNO085 IMUs, SITL.  
-**Documentation:** [View the MAVLink control scripts on GitHub (Coming Soon!)](https://github.com/mistabowhunta)
+**Documentation:** [View the MAVLink control scripts on GitHub]([https://github.com/mistabowhunta](https://github.com/mistabowhunta/Autonomous-UAV-Systems))
 
 ---
 
