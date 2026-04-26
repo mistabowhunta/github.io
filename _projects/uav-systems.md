@@ -27,96 +27,65 @@ Sensor Fusion & Control: Integration of Pixhawk 6C flight controllers and high-p
 To overcome the limitations of standard GPS waypoints, a custom Python script acts as a high-level "mission commander." Utilizing the MAVLink protocol, the script maintains a continuous telemetry stream with the flight controller, monitoring critical data points like orientation and logical state. The core logical flow is executed through a deterministic Finite State Machine (FSM), allowing the UAV to react dynamically to real-world variables and perception triggers rather than static coordinates.
 
 ```python
-# Small logic snippet: PyMavLink (MAVLink) and DroneKit for GPS-Denied Navigation
-################################################################################################
-# Connect vehicle
-################################################################################################
+class XP5FlightController:
+    def __init__(self, connection_string, target_altitude=10):
+        self.vehicle_name = "XP5"
+        self.target_altitude = target_altitude
+        
+        # Flight profiles
+        self.thrust_ascend = 0.50001
+        self.thrust_hover = 0.5
+        self.thrust_descend = 0.49999
+        self.flight_mode = "GUIDED_NOGPS"
+        self.failsafe_mode = "STABILIZE"
 
-print "Connecting to " + vehicleName + "..."
-connection_string       = 'com12'
-vehicle = connect(connection_string, wait_ready=False, baud=57600)
-vehicle.wait_ready(True, timeout=60)
+        # Encapsulated telemetry state: FS: forward sensor, LS: left sensor, RS: right sensor, BS: back sensor, ALT: down sensor, US: up sensor
+        self.telemetry = {
+            'FS': 0.0, 'LS': 0.0, 'RS': 0.0, 
+            'BS': 0.0, 'ALT': 0.0, 'US': 0.0
+        }
 
-################################################################################################
-# Listeners
-################################################################################################
+        print(f"Connecting to {self.vehicle_name} on {connection_string}...")
+        self.vehicle = connect(connection_string, wait_ready=False, baud=57600)
+        self.vehicle.wait_ready(True, timeout=60)
+        
+        self._setup_telemetry_listener()
+        self._run_pre_flight_checks()
 
-# Message listener for lidar sensors
-	# id 0 = forward, id 1 = left, id 2 = right, id 3 = back, id 4 = down, id 5 = up
-	# FS: forward sensor, LS: left sensor, RS: right sensor, BS: back sensor, ALT: down sensor, US: up sensor
-FS = 0
-LS = 0
-RS = 0
-BS = 0
-ALT = 0
-US = 0
-@vehicle.on_message('DISTANCE_SENSOR')
-def listener(self, name, message):
-	global FS
-	global LS
-	global RS
-	global BS
-	global ALT
-	global US
-	if(message.id == 0):
-		FS = float(message.current_distance)
-	elif(message.id == 1):
-		LS = float(message.current_distance)
-	elif(message.id == 2):
-		RS = float(message.current_distance)
-	elif(message.id == 3):
-		BS = float(message.current_distance)
-	elif(message.id == 4):
-		ALT = float(message.current_distance) - 2.2 # Sensor is 20 cm from the ground so need to adjust for that
-	elif(message.id == 5):
-		US = float(message.current_distance)
-		#if(US <= 20):
-			#emergency_land('ALT')
-	print('TimeStamp: ' + str(datetime.now()) + ' FS: ' + str(FS) + ' LS: ' + str(LS) + ' RS: ' + str(RS) + ' BS: ' + str(BS) + ' ALT: ' + str(ALT) + ' US: ' + str(US))
+    def _setup_telemetry_listener(self):
+        """Asynchronous listener for LiDAR distance sensors."""
+        @self.vehicle.on_message('DISTANCE_SENSOR')
+        def listener(vehicle, name, message):
+            sensor_map = {0: 'FS', 1: 'LS', 2: 'RS', 3: 'BS', 4: 'ALT', 5: 'US'}
+            if message.id in sensor_map:
+                distance = float(message.current_distance)
+                # Adjust downward sensor for ground clearance
+                if message.id == 4:
+                    distance -= 2.2 
+                
+                self.telemetry[sensor_map[message.id]] = distance
+                
+            # Optional: Log output (can be commented out for cleaner terminal during flight)
+            # print(f"[{datetime.now()}] Telemetry Update: {self.telemetry}")
+
 
 #...
-#... More code here. This is just a sample
+#... More code lives here, this is just a sample 
 #...
 
 
-# Arm vehicle
-print " Arming " + vehicleName + "!"
-vehicle.armed = True
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='XP5 Autonomous Flight Controller')
+    parser.add_argument('--connect', default='COM12', help='Vehicle connection target string.')
+    args = parser.parse_args()
 
-################################################################################################
-# FLYING!
-################################################################################################
-	
-print(" Taking off!")
-print('FS: ' + str(FS) + ' LS: ' + str(LS) + ' RS: ' + str(RS) + ' BS: ' + str(BS) + ' ALT: ' + str(ALT) + ' US: ' + str(US))
+    # Initialize and run the UAV controller
+    uav = XP5FlightController(connection_string=args.connect, target_altitude=10)
+    
+    try:
+        uav.execute_mission()
+    except KeyboardInterrupt:
+        print("\nManual override triggered. Initiating emergency shutdown.")
+        uav.deinitialize()
 
-roll_angle = -1
-yaw_angle = -20
-pitch_angle = 7
-duration = 2
-
-time.sleep(5)
-thrust = thrustAscend
-t_endAscend = time.time() + 15 # times by 60 is 5 minutes 
-while not ALT >= aTargetAltitude:
-	set_attitude(thrust = thrust)
-	# if(ALT >= 0):
-		# print "ALT >= 0: Start steadying"
-		# set_attitude(roll_angle = roll_angle, yaw_angle = yaw_angle, pitch_angle = pitch_angle, thrust = thrust, duration = duration)
-		# print "Exited steadying while ascending"
-	# else:
-		# set_attitude(thrust = thrust)
-	print " ********************************************************ALT: " + str(ALT)
-	time.sleep(0.2)
-	if(ALT >= aTargetAltitude + 20): # safety net - will exit while loop if alt is +0.04 of target alt
-		print("EXITED ON >= Alt")
-		break
-	if(time.time() >= t_endAscend):
-		print "  EXITED ON SECONDS Ascending ALT: " + str(ALT)
-		break
-
-# Hover for 5 seconds
-print "HOVERING FOR 5 SECONDS"
-thrust = thrustHover
-set_attitude(thrust = thrust, duration = 5)
 ```
