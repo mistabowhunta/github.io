@@ -1,9 +1,9 @@
 - title: "Lead Engineer & Owner — NasonNation Robotics"
-  from: "2023"
+  from: "2015"
   to: "Present"
   description: "<em>(Formerly operated as MyAppMobile, LLC & Independent Freelance)</em><br><br>• Hardware/Software Integration: Architected AI-Integrated Optical Tracking Systems utilizing Python for real-time computer vision.<br>• VR/Haptic Prototyping: Engineered The Sentient Sidearm, a context-aware VR pistol attachment using solenoids, Python, and 3D printing.<br>• Telemetry & Embedded Systems: Engineered low-latency wireless control loops utilizing raw WiFi sockets and Python telemetry to remotely actuate multi-servo mechanisms.<br>• Large-Scale Kinematics: Integrated MQTT protocols for wireless actuation of heavy-duty 2020 aluminum extrusion systems, controlled by two 550KG servo motors.<br>• Mobile Architecture: Designed and maintained customized mobile software solutions across Android and iOS platforms.<br>• Team Leadership: Mentored junior developers and managed the SDLC for cross-platform applications."
 
 - title: "Business Analyst Programmer — City of Beaverton"
-  from: "2018"
+  from: "2021"
   to: "Feb 2026"
   description: "Developed and optimized customized internal and external business applications, specializing in complex SSRS Report Builder integrations. Engineered automated data pipelines to bypass manual UI entry limitations, significantly streamlining municipal workflows. Analyzed and implemented strategic information plans, utilizing C# and SQL Server (SSMS) to improve operational flow and data visualization."
