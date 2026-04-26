@@ -1,19 +1,19 @@
 experience:
   - company: "NasonNation Robotics"
     title: "Lead Engineer & Owner"
-    startDate: "2015" # Insert start date
-    endDate: "Present"
-    note: "(Formerly operated as MyAppMobile, LLC & Independent Freelance)"
-    highlights:
-      - "Hardware/Software Integration: Architected and deployed an AI-Integrated Optical Tracking System utilizing Python and machine learning for real-time computer vision and automated target tracking."
-      - "VR/Haptic Prototyping: Engineered The Sentient Sidearm, a context-aware VR pistol attachment. Designed the iterative hardware utilizing solenoids, Python logic, and advanced 3D printing (Bambu Lab X1-Carbon / PETG-CF) for precision recoil simulation."
-      - "Telemetry & Embedded Systems: Engineered low-latency wireless control loops utilizing raw WiFi sockets and Python telemetry to remotely actuate multi-servo mechatronic mechanisms for advanced hardware prototyping."
-      - "Large-Scale Kinematics: Integrated MQTT protocols for wireless, long-range actuation of heavy-duty 2020 aluminum extrusion mechanical systems, controlled by 550KG servo motors."
-      - "Mobile Architecture: Designed, tested, and maintained customized mobile software solutions for Pacific Northwest businesses, functioning as lead developer across Android and iOS platforms."
-      - "Team Leadership: Mentored junior developers and managed the end-to-end SDLC for cross-platform applications using .NET, Xamarin, and Google Firebase."
+    date: "2015 - Present"
+    description: |
+      *(Formerly operated as MyAppMobile, LLC & Independent Freelance)*
+
+      • Hardware/Software Integration — Architected AI-Integrated Optical Tracking Systems utilizing Python for real-time computer vision.
+      • VR/Haptic Prototyping — Engineered The Sentient Sidearm, a context-aware VR pistol attachment using solenoids, Python, and 3D printing.
+      • Telemetry & Embedded Systems — Engineered low-latency wireless control loops utilizing raw WiFi sockets and Python telemetry to remotely actuate multi-servo mechanisms.
+      • Large-Scale Kinematics — Integrated MQTT protocols for wireless actuation of heavy-duty 2020 aluminum extrusion systems, controlled by two 550KG servo motors.
+      • Mobile Architecture — Designed and maintained customized mobile software solutions across Android and iOS platforms.
+      • Team Leadership — Mentored junior developers and managed the SDLC for cross-platform applications.
 
   - company: "City of Beaverton"
     title: "Business Analyst Programmer"
-    startDate: "2021" # Insert start date
-    endDate: "February 2026"
-    description: "Developed and optimized customized internal and external business applications, specializing in complex SSRS Report Builder integrations. Engineered automated data pipelines to bypass manual UI entry limitations, significantly streamlining municipal workflows. Analyzed and implemented strategic information plans, utilizing C# and SQL Server (SSMS) to improve operational flow and data visualization."
+    date: "2021 - Feb 2026"
+    description: |
+      Developed and optimized customized internal and external business applications, specializing in complex SSRS Report Builder integrations. Engineered automated data pipelines to bypass manual UI entry limitations, significantly streamlining municipal workflows. Analyzed and implemented strategic information plans, utilizing C# and SQL Server (SSMS) to improve operational flow and data visualization.
