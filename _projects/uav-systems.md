@@ -7,8 +7,6 @@ description: A fleet of custom multi-rotor UAVs utilizing MAVLink telemetry and 
 
 ### **Executive Summary**
 The Custom UAV Platforms project focuses on the design, fabrication, and mechatronic integration of a fleet of multi-rotor drones. The overarching engineering objective is to bypass standard, GPS-reliant mission planners by implementing custom telemetry-driven Finite State Machines (FSMs) for robust autonomous operation in indoor and GPS-denied environments.
-Tech Stack: Python, ArduPilot, MAVLink Protocol, Pixhawk 6C, BNO085 IMUs, SITL.
-Documentation: View the MAVLink control scripts on GitHub (Note: link this to your repo if you have one)
 
 **Tech Stack:** Python, ArduPilot, MAVLink Protocol, Pixhawk 6C, BNO085 IMUs, SITL.  
 **Documentation:** [View the MAVLink control scripts on GitHub](https://github.com/mistabowhunta/Autonomous-UAV-Systems)
