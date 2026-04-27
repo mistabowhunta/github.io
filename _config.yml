@@ -68,7 +68,7 @@ collections:
 analytics:
   enabled: true                                        # Set true to enable analytics
   google: https://www.googletagmanager.com/gtag/js?id=G-664VWHVQ2C
-    tracking_id: G-664VWHVQ2C
+    tracking_id:
 
 
 ### Buy me a coffee ###
