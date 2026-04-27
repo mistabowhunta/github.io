@@ -10,7 +10,7 @@ Project Exes was an R&D initiative to build a high-torque, voice-controlled robo
 
 Tech Stack: Python, MQTT, Raspberry Pi 4b, RP2040 (Pico W), I2C, Picovoice (Porcupine and Rhino AI), Power Electronics. 
 
-Documentation: [View the Architecture Repository on GitHub](https://github.com/mistabowhunta/github.io/blob/main/_projects/exes-exoskeleton.md)
+Documentation: [View the Architecture Repository on GitHub](https://github.com/mistabowhunta/Exes-Exoskeleton)
 
 ---
 
