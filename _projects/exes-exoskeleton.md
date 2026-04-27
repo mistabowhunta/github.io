@@ -23,7 +23,7 @@ Heavy, central sensor wiring is a primary failure point in wearable robotics. To
 
 #### 2. Edge-Compute Voice Pipeline
 To ensure safety and reliability, the suit required a fully localized voice command interface with zero reliance on cloud APIs or internet connectivity.
-* **Wake Word & Intent:** Integrated Picovoice *Porcupine* for low-overhead wake word detection "Exes", and *Rhino* for translating complex spoken commands (Calibrate, Deactivate, battery status, Move up left up) directly into JSON state-machine transitions.
+* **Wake Word & Intent:** Integrated Picovoice *Porcupine* for low-overhead wake word detection "Exes", and *Rhino* for translating complex spoken commands (Calibrate, Deactivate, Battery Status, Move Up Left Up) directly into JSON state-machine transitions.
 
 #### 3. Isolated Power & Actuation Delivery
 Driving 550KG servos requires massive current spikes. If actuators share a power bus with logic boards, the resulting brownouts cause catastrophic system reboots.
