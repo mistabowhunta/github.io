@@ -67,7 +67,7 @@ collections:
 ### Analytics ###
 analytics:
   enabled: true                                        # Set true to enable analytics
-  google: https://www.googletagmanager.com/gtag/js?id=G-664VWHVQ2C
+  google:
     tracking_id:
 
 
