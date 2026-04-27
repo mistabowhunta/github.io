@@ -8,8 +8,8 @@ description: (ARCHIVED) A voice-activated exoskeleton prototype utilizing a dist
 ### **Executive Summary**
 Project Exes was an R&D initiative to build a high-torque, voice-controlled robotic exoskeleton. The goal was to actuate two 550KG of servo torque across a user's joints with near-zero latency, requiring a complete departure from standard synchronous microcontroller loops. To handle the massive computational and telemetry overhead, I engineered a distributed IoT network over an asynchronous MQTT broker.
 
-**Tech Stack:** Python, MQTT, Raspberry Pi 4b, RP2040 (Pico W), I2C, Picovoice (Porcupine and Rhino AI), Power Electronics 
-**Documentation:** [View the Architecture Repository on GitHub](https://github.com/mistabowhunta/github.io/blob/main/_projects/exes-exoskeleton.md)
+Tech Stack: Python, MQTT, Raspberry Pi 4b, RP2040 (Pico W), I2C, Picovoice (Porcupine and Rhino AI), Power Electronics 
+Documentation: [View the Architecture Repository on GitHub](https://github.com/mistabowhunta/github.io/blob/main/_projects/exes-exoskeleton.md)
 
 ---
 
