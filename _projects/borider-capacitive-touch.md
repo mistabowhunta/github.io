@@ -22,7 +22,7 @@ The system is powered by a Raspberry Pi utilizing a distributed multi-processing
 * **Visual Feedback:** A 60-pixel NeoPixel strip provides real-time motion telemetry with a circulating 2-pixel "chase" sequence.processing of the Raspberry Pi.
 * **Audio Engine:** Dual-channel audio controller managing synchronized background music loops and event-triggered SFX via the Linux aplay architecture.
 
-![Internal Capacitive Sensor Array](BoRiderTouchSensorsCropped.jpg)
+![Internal Capacitive Sensor Array](/assets/images/BoRiderTouchSensorsCropped.jpg)
 
 #### **2. Design Constraints & Additive Manufacturing**
 * **Form Factor:** Scaled to 30 inches (76cm) to accommodate the target demographic.
