@@ -1,5 +1,5 @@
 ---
-name: Project BoRider: Capacitive Touch Mechatronic Platform
+name: Project BoRider - Capacitive Touch Mechatronic Platform
 tools: [Python, Sensor Fusion, Visual Feedback, Audio Engine, 3D Printing]
 image: /assets/images/BoRiderMainImage.png
 description: BoRider is an instructional robotic platform designed for children aged 6 to 24 months.
