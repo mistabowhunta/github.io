@@ -30,7 +30,7 @@ The system is powered by a Raspberry Pi utilizing a distributed multi-processing
 * **Advanced Materials:** Fabricated using transparent PLA to diffuse internal LED telemetry and Conductive PLA for seamless, localized touch points.
 * **Drivetrain:** Fully 3D-printed drive axle and gear system integrated with a custom steering assembly.
 
-#### **3. Operational Architecture*
+#### **3. Operational Architecture**
 * **Manual Mode (Implemented):** Direct mapping of capacitive inputs to DC motor drivers.
 * **Instructional Mode (Planned):** A cognitive memory game requiring the user to mimic directional sequences.
 * **Catch-Me Mode (Planned):** An autonomous evasion state utilizing proximity sensors to "flee" from detection.
