@@ -6,12 +6,12 @@ This repository hosts the professional portfolio and project documentation for I
 
 ## Core Projects
 
-### [Project Exes](https://isaacnason.net/projects/exes)
+### [Project Exes](https://isaacnason.net/projects/exes-exoskeleton)
 * **System:** 550KG-rated robotic exoskeleton.
 * **Tech:** Python, Distributed Microcontroller Unit Nodes, BNO085 IMU Sensor Fusion, High-Torque Servo/Solenoid Actuation.
 * **Focus:** Structural mechatronics and real-time load distribution.
 
-### [Project BoRider](https://isaacnason.net/projects/borider)
+### [Project BoRider](https://isaacnason.net/projects/borider-capacitive-touch)
 * **System:** Capacitive-touch driven mobile platform for cognitive development.
 * **Tech:** Raspberry Pi, Python (Multiprocessing), TTP223B Sensor Array, NeoPixel Telemetry.
 * **Focus:** Human-Machine Interface (HMI) and failure analysis of 3D-printed drivetrains.
