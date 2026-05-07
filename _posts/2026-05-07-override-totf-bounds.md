@@ -14,13 +14,13 @@ date: 2026-05-07
     <div class="card bg-transparent">
       <div class="card-body">
         <h4 class="card-title border-bottom pb-2">Hardware & Software</h4>
-        <ol class="list-group list-group-flush">
-          <li class="list-group-item bg-transparent"><strong>VR Hardware:</strong> Virtuix Omni One Pico 4 (Custom OS Ecosystem)</li>
-          <li class="list-group-item bg-transparent"><strong>Software Stack:</strong> Python, SteamVR, Business Streaming, OpenVR library</li>
+        <ol class="mt-3">
+          <li class="mb-2 bg-transparent"><strong>VR Hardware:</strong> Virtuix Omni One Pico 4 (Custom OS Ecosystem)</li>
+          <li class="mb-2 bg-transparent"><strong>Software Stack:</strong> Python, SteamVR, Business Streaming, OpenVR library</li>
         </ol>
       </div>
     </div>
-    <h4 class="card-title border-bottom pb-2 mt-4">API Override Protocol</h4>
+    <h4 class="card-title border-bottom pb-2">API Override Protocol</h4>
     <ol class="mt-3">
       <li class="mb-2"><strong>Initialize the Environment:</strong> Ensure your host PC has the required dependencies installed (<code>pip install openvr</code>).</li>
       <li class="mb-2"><strong>Stage the Hardware:</strong> Boot the headset, establish the Business Streaming connection to SteamVR, and launch the application (in this case TOTF). Navigate to the in-game weigh-in screen, but do not weigh in yet.</li>
@@ -29,6 +29,7 @@ date: 2026-05-07
     <h4 class="card-title border-bottom pb-2 mt-4">Example</h4>
       <p class="mb-2">This is how I fixed the issue. There may be tweaks needed for different environments and/or games:</p>
   </div>
+</div>
 ```python
   import openvr
   import time
@@ -45,4 +46,3 @@ date: 2026-05-07
   if __name__ == '__main__':
       override_bounds()
 ```
-</div>
