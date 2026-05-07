@@ -1,8 +1,7 @@
 ---
-layout: default
 name: "Overriding TOTF Play Area Bounds via API Injection"
-date: 2026-05-07
 tools: [vr, python, tutorial, omni_one, pico4, virtuix, openvr, bounds, TOTF]
+date: 2026-05-07
 ---
 
 <div class="card mb-4">
