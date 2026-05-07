@@ -11,11 +11,15 @@ date: 2026-05-07
     <p>
       The Virtuix Omni One Pico 4 utilizes a highly customized Pico OS designed strictly for Virtuix Omni One. At the firmware level, the headset enforces a hardcoded 1.5m x 1.5m safety boundary to perfectly match the physical footprint of the treadmill base.When playing PCVR games via Pico Business Streaming, the Omni OS actively injects this static boundary into the SteamVR Chaperone API. This breaks the spatial AI in room-scale games like The Thrill of the Fight (TOTF), as the game requires a larger registered play area to calculate opponent distance and movement. Standard fixes—such as redrawing boundaries, editing chaperone_info.vrchap config files, or using standard OpenVR advanced settings—fail because the Omni firmware continuously polls and overwrites the API at runtime to prevent the user from virtually stepping off the treadmill.
     </p>
-    <h4 class="card-title border-bottom pb-2">Hardware & Software</h4>
-    <ul class="list-group list-group-flush mb-4 bg-transparent border">
-      <li class="list-group-item bg-transparent border"><strong>VR Hardware:</strong> Virtuix Omni One Pico 4 (Custom OS Ecosystem)</li>
-      <li class="list-group-item bg-transparent border"><strong>Software Stack:</strong> Python, SteamVR, Business Streaming, OpenVR library</li>
-    </ul>
+    <div class="card mb-4 bg-transparent border">
+      <div class="card-body">
+        <h4 class="card-title border-bottom pb-2">Hardware & Software</h4>
+        <ul class="list-group list-group-flush mb-4">
+          <li class="list-group-item bg-transparent border"><strong>VR Hardware:</strong> Virtuix Omni One Pico 4 (Custom OS Ecosystem)</li>
+          <li class="list-group-item bg-transparent border"><strong>Software Stack:</strong> Python, SteamVR, Business Streaming, OpenVR library</li>
+        </ul>
+      </div>
+    </div>
     <h4 class="card-title border-bottom pb-2 mt-4">API Override Protocol</h4>
     <ol class="mt-3">
       <li class="mb-2"><strong>Initialize the Environment:</strong> Ensure your host PC has the required dependencies installed (<code>pip install openvr</code>).</li>
