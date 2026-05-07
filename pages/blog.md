@@ -2,7 +2,7 @@
 layout: post
 title: Blog
 weight: 3
-tags: vr nasonnation robotics mechatronics pico4 aegis control projetexes robotichand borider hand cannon autonomousuav systems
+tags: vr, nasonnation, robotics mechatronics pico4 aegis control projetexes robotichand borider hand cannon autonomousuav systems
 permalink: /posts/
 ---
 
