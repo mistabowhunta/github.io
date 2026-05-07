@@ -6,7 +6,7 @@ tags: [vr nason nation, robotics, mechatronics, pico 4, aegis control, project e
 permalink: /posts/
 ---
 
-# NasonNation Robotics Blog {: .mt-5 .mb-4 }
+<h1 class="mt-5 mb-4">NasonNation Robotics Blog</h1>
 
 <ul>
   {% for post in site.posts %}
