@@ -28,8 +28,7 @@ date: 2026-05-07
     </ol>
     <h4 class="card-title border-bottom pb-2 mt-4">Example</h4>
       <p class="mb-2">This is how I fixed the issue. There may be tweaks needed for different environments and/or games:</p>
-  </div>
-</div>
+
 ```python
   import openvr
   import time
@@ -46,3 +45,5 @@ date: 2026-05-07
   if __name__ == '__main__':
       override_bounds()
 ```
+  </div>
+</div>
