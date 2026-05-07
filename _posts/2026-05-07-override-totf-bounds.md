@@ -11,13 +11,13 @@ date: 2026-05-07
     <p>
       The Virtuix Omni One Pico 4 utilizes a highly customized Pico OS designed strictly for Virtuix Omni One. At the firmware level, the headset enforces a hardcoded 1.5m x 1.5m safety boundary to perfectly match the physical footprint of the treadmill base.When playing PCVR games via Pico Business Streaming, the Omni OS actively injects this static boundary into the SteamVR Chaperone API. This breaks the spatial AI in room-scale games like The Thrill of the Fight (TOTF), as the game requires a larger registered play area to calculate opponent distance and movement. Standard fixes—such as redrawing boundaries, editing chaperone_info.vrchap config files, or using standard OpenVR advanced settings—fail because the Omni firmware continuously polls and overwrites the API at runtime to prevent the user from virtually stepping off the treadmill.
     </p>
-    <div class="card mb-4 bg-transparent">
+    <div class="card bg-transparent">
       <div class="card-body">
         <h4 class="card-title border-bottom pb-2">Hardware & Software</h4>
-        <ul class="list-group list-group-flush mb-4">
+        <ol class="list-group list-group-flush">
           <li class="list-group-item bg-transparent"><strong>VR Hardware:</strong> Virtuix Omni One Pico 4 (Custom OS Ecosystem)</li>
           <li class="list-group-item bg-transparent"><strong>Software Stack:</strong> Python, SteamVR, Business Streaming, OpenVR library</li>
-        </ul>
+        </ol>
       </div>
     </div>
     <h4 class="card-title border-bottom pb-2 mt-4">API Override Protocol</h4>
@@ -28,7 +28,7 @@ date: 2026-05-07
     </ol>
     <h4 class="card-title border-bottom pb-2 mt-4">Example</h4>
       <p class="mb-2">This is how I fixed the issue. There may be tweaks needed for different environments and/or games:</p>
-
+  </div>
 ```python
   import openvr
   import time
@@ -45,5 +45,4 @@ date: 2026-05-07
   if __name__ == '__main__':
       override_bounds()
 ```
-  </div>
 </div>
