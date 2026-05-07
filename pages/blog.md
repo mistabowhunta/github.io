@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Blog
+title: NasonNation Robotics Blog
 weight: 3
-tags: vr, nasonnation, robotics mechatronics pico4 aegis control projetexes robotichand borider hand cannon autonomousuav systems
+tags: [vr nason nation, robotics, mechatronics, pico 4, aegis control, project exes, robotic hand, borider, hand cannon, autonomous uav, systems]
 permalink: /posts/
 ---
 
