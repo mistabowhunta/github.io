@@ -2,6 +2,7 @@
 layout: post
 title: Blog
 weight: 3
+tags: vr
 permalink: /blog/
 ---
 
