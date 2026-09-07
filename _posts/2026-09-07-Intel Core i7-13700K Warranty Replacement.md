@@ -1,7 +1,7 @@
 ---
 title: "Intel Core i7-13700K Warranty Replacement"
 name: "Intel Core i7-13700K Warranty Replacement RMA"
-tools: [intel, cpu, rma, bios, troubleshooting]
+tools: [intel, cpu, rma, bios, troubleshooting, processor, warranty]
 date: 2026-09-07
 ---
 
@@ -35,6 +35,6 @@ date: 2026-09-07
 # Example BIOS tweaks to survive the IPDT log generation
 Performance Core Ratio: Downclock from Auto (53) to 50
 Long Duration Package Power Limit (PL1): 125W
-Short Duration Package Power Limit (PL2): 253W
+Short Duration Package Power Limit (PL2): 125W
 Intel Default Settings: Enabled (Disable Asus MultiCore Enhancement / MSI Game Boost)
 ```
