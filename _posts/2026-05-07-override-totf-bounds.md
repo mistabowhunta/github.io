@@ -1,5 +1,5 @@
 ---
-title: "Overriding TOTF Play Area Bounds via API Injection"
+title: " Virtuix Omni One Pico 4 Overriding TOTF Play Area Bounds via API Injection"
 name: "Overriding TOTF Play Area Bounds via API Injection"
 tools: [vr, python, tutorial, omni_one, pico4, virtuix, openvr, bounds, TOTF]
 date: 2026-05-07
