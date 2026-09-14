@@ -1,7 +1,7 @@
 ---
 name: Exes - Voice-Activated Distributed Exoskeleton
 tools: [Python, MQTT, Raspberry Pi 4b, RP2040 (Pico W), I2C, Picovoice (Porcupine and Rhino AI), Power Electronics]
-image: /assets/images/Exes-ExoSkeleton-Combined-Cropped.png
+image: /assets/images/ExesExo.jpg
 description: (ARCHIVED) A voice-activated exoskeleton prototype utilizing a distributed MQTT telemetry network, isolated power architecture, and local edge-compute to drive 550KG servos.
 ---
 
