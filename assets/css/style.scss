@@ -4,8 +4,9 @@
 
 .button-container {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   margin-top: 25px;
+  flex-direction: column;
   justify-content: center; /* Centers the buttons if your container is full width */
 }
 
@@ -13,12 +14,13 @@
   background-color: transparent;
   color: #ffffff;
   border: 2px solid #444; 
-  border-radius: 4px;
+  border-radius: 30px;
   padding: 12px 30px;
   font-size: 16px;
   font-family: inherit;
   font-weight: 600;
   cursor: pointer;
+  width: 100%;
   transition: all 0.3s ease-in-out;
 }
 
@@ -32,12 +34,13 @@
   background-color: transparent;
   color: #aaaaaa; 
   border: 2px solid #333; 
-  border-radius: 4px;
+  border-radius: 30px;
   padding: 12px 30px;
   font-size: 16px;
   font-family: inherit;
   font-weight: 600;
   cursor: pointer;
+  width: 100%;
   transition: all 0.3s ease-in-out;
 }
 
