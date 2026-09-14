@@ -1,6 +1,7 @@
 ---
 title: " Virtuix Omni One Pico 4 Overriding TOTF Play Area Bounds via API Injection"
 name: "Overriding TOTF Play Area Bounds via API Injection"
+description: "How to defeat the Virtuix Omni One's hardcoded firmware constraints. This post explores bypassing the continuous runtime injection that overwrites the SteamVR Chaperone API, restoring spatial AI in room-scale environments."
 tools: [vr, python, tutorial, omni_one, pico4, virtuix, openvr, bounds, TOTF]
 date: 2026-05-07
 ---
