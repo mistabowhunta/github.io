@@ -63,3 +63,15 @@
     transform: translateY(0);
   }
 }
+
+@keyframes loadGlow {
+  0% { box-shadow: 0 0 0px rgba(0, 132, 255, 0); }
+  50% { box-shadow: 0 0 25px rgba(0, 132, 255, 0.6); }
+  100% { box-shadow: 0 0 5px rgba(0, 132, 255, 0.1); } /* Leaves a very faint resting border */
+}
+
+.about-hardware-img {
+  border-radius: 8px; /* Softens the corners of the photo */
+  max-width: 100%;
+  animation: loadGlow 2s ease-in-out 0.5s 1; /* Runs once, half a second after page load */
+}
