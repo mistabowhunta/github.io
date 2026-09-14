@@ -1,3 +1,48 @@
 ---
 ---
 @import "portfolYOU";
+
+.button-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  justify-content: center; /* Centers the buttons if your container is full width */
+}
+
+.cta-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #444; 
+  border-radius: 4px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+  border-color: #0084ff;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 132, 255, 0.3);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #aaaaaa; 
+  border: 2px solid #333; 
+  border-radius: 4px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.secondary-btn:hover {
+  color: #ffffff;
+  border-color: #666; 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
