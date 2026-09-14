@@ -21,6 +21,8 @@ Heavy, central sensor wiring is a primary failure point in wearable robotics. To
 * **Peripheral Nodes:** Raspberry Pi Pico W microcontrollers are embedded at the extremities. They interface via I2C with BNO085 modules, utilizing the sensor's onboard coprocessor to handle complex quaternion/Euler math, keeping network payloads lightweight.
 * **Central Command Hub:** A Raspberry Pi 4b acts as the master orchestrator. I designed a non-blocking, thread-safe Python queue worker that subscribes to the MQTT sensor streams, maps the telemetry to dynamically calibrated limits, and commands the servos without overwhelming the Linux OS scheduler.
 
+![Internal Exes Suit](/assets/images/Exes-ExoSkeleton.png)
+
 #### 2. Edge-Compute Voice Pipeline
 To ensure safety and reliability, the suit required a fully localized voice command interface with zero reliance on cloud APIs or internet connectivity.
 * **Wake Word & Intent:** Integrated Picovoice *Porcupine* for low-overhead wake word detection "Exes", and *Rhino* for translating complex spoken commands (Calibrate, Deactivate, Battery Status, Move Up Left Up) directly into JSON state-machine transitions.
