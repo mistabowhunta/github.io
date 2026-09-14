@@ -14,7 +14,7 @@ permalink: /blog/
     <li>
       <span>{{ post.date | date: "%B %d, %Y" }}</span> &raquo; 
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.description }}</p>
+      <p style="font-style: italic; font-size: 0.9em; color: #aaaaaa; margin-top: 5px;">{{ post.description }}</p>
     </li>
   {% endfor %}
 
