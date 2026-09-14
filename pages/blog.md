@@ -14,7 +14,7 @@ permalink: /blog/
     <li>
       <span>{{ post.date | date: "%B %d, %Y" }}</span> &raquo; 
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.description }}{: .blog-excerpt}</p>
+      <p>{{ post.description {: .blog-excerpt}}}</p>
     </li>
   {% endfor %}
 
