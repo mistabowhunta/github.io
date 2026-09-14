@@ -14,8 +14,15 @@ permalink: /blog/
     <li>
       <span>{{ post.date | date: "%B %d, %Y" }}</span> &raquo; 
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.description {: .blog-excerpt}}}</p>
+      <p>{{ post.description }}</p>
     </li>
   {% endfor %}
 
 </ul>
+
+---
+title: Blog
+style: fill / border (choose one only)
+color: primary / secondary / success / danger / warning / info / light / dark (choose one only)
+description: Write post description here, or it will be the first 25 words of the post's body.
+---
