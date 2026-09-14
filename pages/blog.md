@@ -6,6 +6,7 @@ permalink: /blog/
 ---
 
 <h1 class="mt-5 mb-4">NasonNation Robotics Blog</h1>
+<h2 class="mb-4">Technical deep-dives, hardware troubleshooting, and software workarounds from the workbench</h2>
 
 <ul>
   {% for post in site.posts %}
