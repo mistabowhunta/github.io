@@ -3,6 +3,7 @@ title: "Intel Core i7-13700K Warranty Replacement"
 name: "Intel Core i7-13700K Warranty Replacement RMA"
 tools: [intel, cpu, rma, bios, troubleshooting, processor, warranty]
 date: 2026-09-07
+published: false
 ---
 
 <div class="card mb-4">
