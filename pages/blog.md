@@ -11,17 +11,11 @@ permalink: /blog/
 <ul>
 
   {% for post in site.posts %}
-
     <li>
-
       <span>{{ post.date | date: "%B %d, %Y" }}</span> &raquo; 
-
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-
-      <p>{{ post.description }}</p>
-
+      <p>{{ *post.description* }}</p>
     </li>
-
   {% endfor %}
 
 </ul>
