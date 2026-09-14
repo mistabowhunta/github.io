@@ -9,11 +9,19 @@ permalink: /blog/
 <p class="mb-4">Technical deep-dives, hardware troubleshooting, and software workarounds from the workbench</p>
 
 <ul>
+
   {% for post in site.posts %}
+
     <li>
-      {{ post.date | date: "%B %d, %Y" }} »
-      [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
-      {{ post.description }}
+
+      <span>{{ post.date | date: "%B %d, %Y" }}</span> &raquo; 
+
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+
+      <p>{{ post.description }}</p>
+
     </li>
+
   {% endfor %}
+
 </ul>
