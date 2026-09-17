@@ -17,9 +17,9 @@ This repository hosts the professional portfolio and project documentation for I
 * **Focus:** Human-Machine Interface (HMI) and failure analysis of 3D-printed drivetrains.
 
 ## Technical Stack
-* **Languages:** Python, C#, MicroPython, C++, SQL (SSRS).
+* **Languages:** Python, C#, MicroPython, SQL (SSRS), .NET.
 * **Hardware:** Raspberry Pi series, ESP32, Arduino, STM32.
-* **Tools:** CAD (Blender/3D Builder), Bambu Studio (X1-Carbon), Raspberry Pi OS Lite, Wireshark.
+* **Tools:** CAD (Blender/Autodesk Fusion), Bambu Studio (X1-Carbon), Raspberry Pi OS Lite, Wireshark.
 
 ---
 © 2026 Isaac Nason - NasonNation Robotics
