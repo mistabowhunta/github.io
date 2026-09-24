@@ -46,3 +46,4 @@ def thermal_capture_thread():
         log_fatal_error(e)
     finally:
         spi.close()
+```
