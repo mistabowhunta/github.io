@@ -1,7 +1,7 @@
 ---
 name: Autonomous UAV Systems & MAVLink Telemetry
 tools: [Python, ArduPilot, MAVLink, Pixhawk 6C, Sensor Fusion, 3D Printing, iNav, BetaFlight, Mission Planner, Express LRS, BLHeli Suites, ESC Configurator Online]
-image: /assets/images/1777155190813.png
+image: /assets/images/UAVFleetProfile.jpg
 description: A fleet of custom multi-rotor UAVs utilizing MAVLink telemetry and Python-driven Finite State Machines (FSMs) for autonomous, GPS-denied indoor navigation.
 ---
 
