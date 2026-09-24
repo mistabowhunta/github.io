@@ -21,7 +21,7 @@ date: 2026-09-24
         </ol>
       </div>
     </div>
-    <h4 class="card-title border-bottom pb-2">API Override Protocol</h4>
+    <h4 class="card-title border-bottom pb-2">Integration Protocol</h4>
     <ol class="mt-3">
       <li class="mb-2"><strong>Standardize the Framework:</strong> Pull the Apache 2.0 licensed Intrinsic Core repository to replace custom hardware abstraction layers.</li>
       <li class="mb-2"><strong>Deploy Perception:</strong> Utilize the native NVIDIA FoundationPose integration for out-of-the-box 6-DoF pose estimation, bypassing custom YOLOv8 pipelines for 3D spatial tracking.</li>
