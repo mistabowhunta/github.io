@@ -1,7 +1,7 @@
 ---
 name: NasonNation // Command — Distributed Edge/GPU AI Security & Biometric Platform
 tools: [Python, FastAPI, React, TypeScript, OpenCV, YOLOv8s, YuNet/SFace, Qwen2.5-VL, WebRTC, Docker, PostgreSQL]
-image: /assets/images/projects/nasonnation-command.png
+image: /assets/images/nasonnation-command.png
 description: A containerized, sub-second WebRTC surveillance and biometric threat-intelligence platform pairing continuous Edge CPU tracking (YOLOv8s + YuNet/SFace 128-D vectors) with asynchronous LAN GPU Vision-Language verification (RTX 3060 Ti).
 ---
 
@@ -33,3 +33,4 @@ Running a 7-billion-parameter Vision-Language Model (VLM) 24/7 on every video fr
 * **5-Second H.264 MP4 Instant Replays & 24h Thermal Heatmaps:** Rolling pre/post-trigger frame ring buffers encode 5-second H.264 clips for person and animal detections, paired with a live 16:9 SVG thermal dwell-time heatmap overlay.
 
 {% include elements/button.html link="https://github.com/NasonNation" text="View on GitHub" style="primary" %}
+<button class="cta-btn" onclick="window.location.href='https://github.com/mistabowhunta'">View on GitHub</button>
