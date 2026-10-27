@@ -7,7 +7,7 @@ description: A containerized, sub-second WebRTC surveillance and biometric threa
 
 # NasonNation // Command
 
-**NasonNation // Command** is a full-stack, self-hosted computer vision, biometric identification, and perimeter security platform architected to eliminate the false alarms, cloud latency, and privacy leaks of commercial NVR systems.
+A full-stack, self-hosted computer vision, biometric identification, and perimeter security platform architected to eliminate the false alarms, cloud latency, and privacy leaks of commercial NVR systems.
 
 ![NasonNation Command Dashboard](/assets/images/nasonnation-command.png)
 
@@ -22,6 +22,8 @@ Running a 7-billion-parameter Vision-Language Model (VLM) 24/7 on every video fr
 2. **Tier 2 — On-Demand LAN GPU Co-Processor (`NVIDIA RTX 3060 Ti`):**
    * Whenever the Edge Node verifies a true moving target, it dispatches the high-resolution crop over the local gigabit LAN to an **RTX 3060 Ti** running **`Qwen2.5-VL:7b`**.
    * The VLM performs semantic verification—purging inanimate false positives, extracting vehicle paint/body types, reading **License Plates (ALPR)** and **Delivery Carrier logos** (`AMAZON`, `UPS`, `FEDEX`, `USPS`), and writing a tactical summary back to PostgreSQL.
+  
+![NasonNation Command Dashboard - Driveway Example](/assets/images/driveway_zoom.png)
 
 ---
 
