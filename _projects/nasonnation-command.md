@@ -32,5 +32,4 @@ Running a 7-billion-parameter Vision-Language Model (VLM) 24/7 on every video fr
 * **OpSec-First OSINT Launchpad:** One-click reverse-face search integration (`PimEyes`, `Yandex`) with an automatic **Whitelist OpSec Lock** that disables external uploads for trusted family members and strips all EXIF metadata.
 * **5-Second H.264 MP4 Instant Replays & 24h Thermal Heatmaps:** Rolling pre/post-trigger frame ring buffers encode 5-second H.264 clips for person and animal detections, paired with a live 16:9 SVG thermal dwell-time heatmap overlay.
 
-{% include elements/button.html link="https://github.com/NasonNation" text="View on GitHub" style="primary" %}
-<button class="cta-btn" onclick="window.location.href='https://github.com/mistabowhunta'">View on GitHub</button>
+<button class="cta-btn" onclick="window.location.href=https://github.com/mistabowhunta">View on GitHub</button>
