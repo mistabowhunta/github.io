@@ -3,6 +3,7 @@ name: NasonNation // Command — Distributed Edge/GPU AI Security & Biometric Pl
 tools: [Python, FastAPI, React, TypeScript, OpenCV, YOLOv8s, YuNet/SFace, Qwen2.5-VL, WebRTC, Docker, PostgreSQL]
 image: /assets/images/nasonnation-command.png
 description: A containerized, sub-second WebRTC surveillance and biometric threat-intelligence platform pairing continuous Edge CPU tracking (YOLOv8s + YuNet/SFace 128-D vectors) with asynchronous LAN GPU Vision-Language verification (RTX 3060 Ti).
+permalink: /projects/nasonnation-command
 ---
 
 # NasonNation // Command
