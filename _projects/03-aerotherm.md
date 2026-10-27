@@ -3,6 +3,7 @@ name: AeroTherm Autonomous Radiometric Thermal UAV
 tools: [Python, OpenCV, Hardware, 3D Printing, ArduPilot]
 image: /assets/images/AeroThermProfile.jpg
 description: A 1588g heavy-lift quadcopter utilizing a custom headless Python pipeline and FLIR Lepton 3.5 for absolute thermal anomaly detection.
+permalink: /projects/aerotherm
 ---
 
 ### **Executive Summary**
