@@ -33,7 +33,7 @@ date: 2026-09-24
 </div>
 ```bash
     # Clone the STMicroelectronics Imaging Open-Source Hub
-    git clone [https://github.com/STMicroelectronics/STImaging_Overall_Offer.git](https://github.com/STMicroelectronics/STImaging_Overall_Offer.git)
+    git clone https://github.com/STMicroelectronics/STImaging_Overall_Offer.git
     cd STImaging_Overall_Offer
     
     # Navigate to the Linux kernel drivers directory to review module specific builds
