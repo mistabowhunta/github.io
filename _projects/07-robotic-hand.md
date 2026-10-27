@@ -3,6 +3,7 @@ name: Humanoid Robotic Hand & Modular WiFi Telemetry
 tools: [CircuitPython, RP2040, WiFi Sockets, PWM Control, Mechatronics, 3D Printing]
 image: /assets/images/Gauntlet.png
 description: A high-DOF humanoid robotic hand engineered for precise kinematic sequencing, utilizing a modular CircuitPython architecture for WiFi telemetry and simultaneous PWM control.
+permalink: /projects/robotic-hand
 ---
 
 ### **Executive Summary**
