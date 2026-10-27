@@ -34,7 +34,7 @@ date: 2026-09-24
 ```bash
   # Clone the Intrinsic Core repository into the ROS 2 workspace src directory
   cd ~/ros2_ws/src
-  git clone [https://github.com/intrinsic-ai/intrinsic_core.git](https://github.com/intrinsic-ai/intrinsic_core.git)
+  git clone https://github.com/intrinsic-ai/intrinsic_core.git
   
   # Install dependencies and build the control framework
   cd ~/ros2_ws
