@@ -40,6 +40,12 @@ Running a 7-billion-parameter Vision-Language Model (VLM) 24/7 on every video fr
 
 ![NasonNation Command](/assets/images/heat_signatures.png)
 
-[View Code](https://github.com/mistabowhunta/nason-command)
+[View Code](https://github.com/mistabowhunta/nason-command) | [Open Full Architecture PDF](/assets/images/NasonNation_Command_Architecture_Portfolio.pdf)
 
-![High Level Architecture](/assets/images/NasonNation_Command_Architecture_Portfolio.pdf)
+<iframe
+  src="/assets/images/NasonNation_Command_Architecture_Portfolio.pdf"
+  width="100%"
+  height="850px"
+  style="border: 1px solid #2a2a2a; border-radius: 6px; margin-top: 16px;"
+  title="High Level Architecture">
+</iframe>
