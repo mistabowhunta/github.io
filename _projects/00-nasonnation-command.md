@@ -10,7 +10,7 @@ permalink: /projects/nasonnation-command
 
 A full-stack, self-hosted computer vision, biometric identification, and perimeter security platform architected to eliminate the false alarms, cloud latency, and privacy leaks of commercial NVR systems.
 
-![NasonNation Command](/assets/images/nasonnation-command.png)
+![NasonNation Command](/assets/images/nason_command_v73_hero.jpg)
 
 ## System Architecture: Split Edge-CPU + LAN-GPU Pipeline
 
