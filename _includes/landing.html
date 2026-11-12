@@ -1,6 +1,4 @@
 <style>
-  /* Hide stock portfolYOU side watermark */
-  #attribution { display: none !important; }
 
   .nn-hero {
     padding: 1.5rem 0 2rem 0;
@@ -177,7 +175,7 @@
     <div class="col-lg-8 order-2 order-lg-1 mt-4 mt-lg-0">
       <div class="nn-status-pill">
         <span class="nn-status-dot"></span>
-        15+ Yrs Hardware &amp; Software &middot; Embedded &middot; Robotics &middot; Edge AI
+        15+ Years Hardware &amp; Software &middot; Embedded &middot; Robotics &middot; Edge AI
       </div>
 
       <h1 class="nn-headline">
@@ -192,7 +190,7 @@
 
       <!-- Edit stack pills anytime to match your exact target roles -->
       <div class="nn-badges">
-        <span class="nn-badge">C / C++</span>
+        <span class="nn-badge">.NET</span>
         <span class="nn-badge">Python</span>
         <span class="nn-badge">Embedded Linux &amp; RTOS</span>
         <span class="nn-badge">Autonomous UAVs</span>
@@ -225,38 +223,10 @@
   </div>
 
   <div class="row">
-    {% assign shown_count = 0 %}
-
-    {% for project in site.projects %}
-      {% if project.name contains "Command" and shown_count < 3 %}
-        {% if project.external_url %}
-          {% assign project_url = project.external_url %}
-        {% else %}
-          {% assign project_url = project.url | relative_url %}
-        {% endif %}
-        <div class="col-lg-4 col-md-6 mb-4">
-          <a href="{{ project_url }}" class="nn-card text-reset">
-            {% if project.image %}
-              <img src="{{ project.image }}" alt="{{ project.name }}" class="nn-card-img">
-            {% endif %}
-            <div class="nn-card-body">
-              <div class="nn-card-title">{{ project.name }}</div>
-              <div class="nn-card-desc">{{ project.description | truncate: 135 }}</div>
-              <div>
-                {% for tool in project.tools limit:4 %}
-                  <span class="nn-tool-tag">{{ tool }}</span>
-                {% endfor %}
-              </div>
-            </div>
-          </a>
-        </div>
-        {% assign shown_count = shown_count | plus: 1 %}
-      {% endif %}
-    {% endfor %}
-
-    {% for project in site.projects %}
-      {% unless project.name contains "Command" %}
-        {% if shown_count < 3 %}
+    {% assign featured_keys = "Command,MAVLink,AeroTherm" | split: "," %}
+    {% for key in featured_keys %}
+      {% for project in site.projects %}
+        {% if project.name contains key %}
           {% if project.external_url %}
             {% assign project_url = project.external_url %}
           {% else %}
@@ -278,9 +248,9 @@
               </div>
             </a>
           </div>
-          {% assign shown_count = shown_count | plus: 1 %}
+          {% break %}
         {% endif %}
-      {% endunless %}
+      {% endfor %}
     {% endfor %}
   </div>
 </section>
