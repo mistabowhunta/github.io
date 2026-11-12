@@ -1,8 +1,8 @@
 ---
-name: Aegis Control Sentry Turret
-tools: [Python, YOLOv8, Computer Vision, Hardware, 3D Printing]
-image: /assets/images/1759271604070.jpg
-description: AI-powered mechatronic sentry turret and drone system featuring YOLOv8 object detection, multi-threaded Python tracking, and a custom PLA chassis.
+name: Aegis Control - Autonomous 2-Axis CV Sentry Platform
+tools: [Python, YOLOv8, OpenCV, Closed-Loop Gimbal, PWM Servo Control, Mechatronics]
+image: /assets/images/aegis_control_hero.jpg
+description: Closed-loop 2-axis mechatronic tracking platform pairing real-time YOLOv8 + IR optical target acquisition with multi-threaded Python gimbal control and a custom hexagonal stabilized chassis.
 permalink: /projects/aegis-control
 ---
 
