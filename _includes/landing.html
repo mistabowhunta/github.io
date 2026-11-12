@@ -1,31 +1,55 @@
 <style>
 
-  .nn-hero {
-    padding: 1.5rem 0 2rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  /* Subtle full-bleed CAD grid that fades smoothly into dark charcoal at the edges */
+  .nn-grid-bg {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+      linear-gradient(to right, rgba(56, 189, 248, 0.055) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(56, 189, 248, 0.055) 1px, transparent 1px);
+    background-size: 44px 44px;
+    -webkit-mask-image: radial-gradient(ellipse 78% 60% at 50% 28%, #000 25%, transparent 95%);
+    mask-image: radial-gradient(ellipse 78% 60% at 50% 28%, #000 25%, transparent 95%);
   }
+
+  .nn-hero,
+  #featured-systems {
+    position: relative;
+    z-index: 1;
+  }
+
+  .nn-hero {
+    padding: 1.5rem 0 2.2rem 0;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.16);
+  }
+
   .nn-status-pill {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 4px 12px;
+    padding: 4px 13px;
     border-radius: 999px;
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    background: rgba(16, 185, 129, 0.12);
-    color: #34d399;
-    border: 1px solid rgba(16, 185, 129, 0.35);
+    background: rgba(14, 28, 42, 0.85);
+    color: #7dd3fc;
+    border: 1px solid rgba(56, 189, 248, 0.55);
+    box-shadow: 0 0 16px rgba(56, 189, 248, 0.18), inset 0 0 10px rgba(56, 189, 248, 0.08);
     margin-bottom: 1rem;
   }
+
   .nn-status-dot {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: #10b981;
-    box-shadow: 0 0 8px #10b981;
+    background: #38bdf8;
+    box-shadow: 0 0 9px #38bdf8;
   }
+
   .nn-headline {
     font-size: 2.05rem;
     font-weight: 800;
@@ -33,141 +57,172 @@
     letter-spacing: -0.02em;
     margin-bottom: 0.85rem;
   }
+
   .nn-headline span {
-    color: #10b981;
+    color: #38bdf8;
+    text-shadow: 0 0 22px rgba(56, 189, 248, 0.28);
   }
+
   .nn-subtext {
     font-size: 1.02rem;
     line-height: 1.6;
-    opacity: 0.85;
+    opacity: 0.86;
     max-width: 640px;
     margin-bottom: 1.15rem;
   }
+
   .nn-badges {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 7px;
     margin-bottom: 1.5rem;
   }
+
   .nn-badge {
     font-size: 0.75rem;
     font-weight: 600;
     padding: 4px 10px;
     border-radius: 6px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    opacity: 0.92;
+    background: rgba(14, 25, 38, 0.75);
+    color: #e2e8f0;
+    border: 1px solid rgba(56, 189, 248, 0.28);
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.06);
   }
+
   .nn-actions {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 12px;
   }
+
   .nn-btn-primary {
     display: inline-block;
     padding: 10px 22px;
     border-radius: 8px;
     font-weight: 700;
     font-size: 0.9rem;
-    background: #10b981;
-    color: #090d10 !important;
-    border: 1px solid #34d399;
+    background: rgba(14, 32, 48, 0.92);
+    color: #f0f9ff !important;
+    border: 1.5px solid #38bdf8;
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.32), inset 0 0 12px rgba(56, 189, 248, 0.14);
     text-decoration: none !important;
-    transition: transform 0.15s ease, background 0.15s ease;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
   }
+
   .nn-btn-primary:hover {
-    background: #34d399;
+    background: #38bdf8;
+    color: #081018 !important;
+    box-shadow: 0 0 24px rgba(56, 189, 248, 0.55);
     transform: translateY(-1px);
   }
+
   .nn-btn-secondary {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 8px;
     font-weight: 600;
     font-size: 0.9rem;
-    background: transparent;
+    background: rgba(15, 23, 34, 0.55);
     color: inherit !important;
-    border: 1px solid rgba(255, 255, 255, 0.28);
+    border: 1px solid rgba(125, 211, 252, 0.32);
     text-decoration: none !important;
-    transition: border-color 0.15s ease, transform 0.15s ease;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
   }
+
   .nn-btn-secondary:hover {
-    border-color: #10b981;
+    border-color: #38bdf8;
+    box-shadow: 0 0 16px rgba(56, 189, 248, 0.24);
     transform: translateY(-1px);
   }
+
   .nn-avatar {
     width: 195px;
     height: 195px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid rgba(16, 185, 129, 0.5);
-    box-shadow: 0 0 30px rgba(16, 185, 129, 0.14);
+    border: 2.5px solid #38bdf8;
+    box-shadow: 0 0 28px rgba(56, 189, 248, 0.28);
   }
+
   .nn-section-hdr {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     margin: 2.2rem 0 1.1rem 0;
   }
+
   .nn-section-title {
-    font-size: 1.1rem;
+    font-size: 1.08rem;
     font-weight: 800;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: 0;
   }
+
   .nn-card {
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.18s ease, border-color 0.18s ease;
+    background: linear-gradient(180deg, rgba(14, 24, 36, 0.78) 0%, rgba(10, 15, 22, 0.9) 100%);
+    border: 1.5px solid rgba(56, 189, 248, 0.38);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.1), inset 0 0 14px rgba(56, 189, 248, 0.04);
+    transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
     display: flex;
     flex-direction: column;
   }
+
   .nn-card:hover {
     transform: translateY(-4px);
-    border-color: rgba(16, 185, 129, 0.6);
+    border-color: #38bdf8;
+    box-shadow: 0 0 26px rgba(56, 189, 248, 0.28), inset 0 0 16px rgba(56, 189, 248, 0.08);
     text-decoration: none !important;
   }
+
   .nn-card-img {
     width: 100%;
     height: 175px;
     object-fit: cover;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.2);
   }
+
   .nn-card-body {
     padding: 1rem 1.1rem;
     flex: 1;
     display: flex;
     flex-direction: column;
   }
+
   .nn-card-title {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 0.45rem;
     color: inherit;
   }
+
   .nn-card-desc {
     font-size: 0.84rem;
-    opacity: 0.78;
+    opacity: 0.8;
     line-height: 1.5;
     margin-bottom: 0.85rem;
     flex: 1;
   }
+
   .nn-tool-tag {
     font-size: 0.68rem;
-    padding: 2px 7px;
-    border-radius: 4px;
-    background: rgba(16, 185, 129, 0.12);
-    color: #34d399;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.45);
+    color: #7dd3fc;
     margin-right: 4px;
     margin-bottom: 4px;
     display: inline-block;
   }
 </style>
+
+<div class="nn-grid-bg" aria-hidden="true"></div>
 
 <!-- 2-Column Executive Hero -->
 <section class="nn-hero">
@@ -188,7 +243,6 @@
         Edge-to-GPU computer vision pipelines.
       </p>
 
-      <!-- Edit stack pills anytime to match your exact target roles -->
       <div class="nn-badges">
         <span class="nn-badge">.NET</span>
         <span class="nn-badge">Python</span>
@@ -213,11 +267,11 @@
   </div>
 </section>
 
-<!-- Above-the-Fold Featured Systems (Auto-pins Command #1 + next 2 projects) -->
+<!-- Above-the-Fold Featured Systems (Command + MAVLink UAVs + AeroTherm) -->
 <section id="featured-systems" class="pb-4">
   <div class="nn-section-hdr">
     <h2 class="nn-section-title">Featured Engineering Builds</h2>
-    <a href="/projects" style="font-size: 0.85rem; color: #34d399; font-weight: 600;">
+    <a href="/projects" style="font-size: 0.85rem; color: #38bdf8; font-weight: 600;">
       See full archive ({{ site.projects | size }}) &rarr;
     </a>
   </div>
