@@ -14,6 +14,13 @@
     mask-image: radial-gradient(ellipse 78% 60% at 50% 28%, #000 25%, transparent 95%);
   }
 
+  .nn-card-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+}
+
   .nn-hero,
   #featured-systems {
     position: relative;
@@ -277,7 +284,7 @@
   </div>
 
   <div class="row">
-    {% assign featured_keys = "Command,MAVLink,AeroTherm" | split: "," %}
+    {% assign featured_keys = "Command,Aegis,MAVLink" | split: "," %}
     {% for key in featured_keys %}
       {% for project in site.projects %}
         {% if project.name contains key %}
