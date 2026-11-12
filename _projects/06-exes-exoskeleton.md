@@ -2,7 +2,7 @@
 name: Exes - Voice-Activated Distributed Exoskeleton
 tools: [Python, MQTT, Raspberry Pi 4b, RP2040 (Pico W), I2C, Picovoice (Porcupine and Rhino AI), Power Electronics]
 image: /assets/images/ExesExo.jpg
-description: (ARCHIVED) A voice-activated exoskeleton prototype utilizing a distributed MQTT telemetry network, isolated power architecture, and local edge-compute to drive 550KG servos.
+description: (R&D Prototype) A voice-activated exoskeleton prototype utilizing a distributed MQTT telemetry network, isolated power architecture, and local edge-compute to drive 550KG servos.
 permalink: /projects/exes-exoskeleton
 ---
 
@@ -34,7 +34,7 @@ Driving 550KG servos requires massive current spikes. If actuators share a power
 * **Regulation & ADC Monitoring:** 20A 300W Buck Converters step down the voltage. Using an ACS712 current/voltage sensor and an ADS1115 ADC, the Pi digitally monitors battery health and triggers synthesized audio warnings to the user before voltage drops critically low.
 * **PWM Offloading:** To prevent OS-level jitter from causing erratic joint movements, a PCA9685 16-channel controller handles all precise PWM signal generation over I2C.
 
-### **Post-Mortem: Why This Project is Archived**
+### **Post-Mortem: Why This Project only reached R&D prototype phase**
 
 As an engineer, knowing when a prototype has hit its physical limits is just as important as writing the code. 
 
